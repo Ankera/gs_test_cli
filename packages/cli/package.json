@@ -1,6 +1,6 @@
 {
   "name": "@zimu_test/cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "> TODO: description",
   "author": "余亚勇 <15189120919@163.com>",
   "homepage": "https://github.com/Ankera/gs_test_cli#readme",
@@ -32,8 +32,8 @@
   },
   "gitHead": "278eace55c49cd7418629461430cd340bb42f736",
   "dependencies": {
-    "@zimu_test/init": "^1.0.0",
-    "@zimu_test/utils": "^1.0.0",
+    "@zimu_test/init": "^1.0.1",
+    "@zimu_test/utils": "^1.0.1",
     "chalk": "^5.1.0",
     "commander": "^12.0.0",
     "import-local": "^3.1.0",

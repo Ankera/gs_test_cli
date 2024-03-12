@@ -1,6 +1,6 @@
 {
   "name": "@zimu_test/init",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "> TODO: description",
   "author": "ankera <15189120919@163.com>",
   "homepage": "https://github.com/Ankera/gs_test_cli#readme",
@@ -27,6 +27,6 @@
     "url": "https://github.com/Ankera/gs_test_cli/issues"
   },
   "dependencies": {
-    "@zimu_test/command": "^1.0.0"
+    "@zimu_test/command": "^1.0.1"
   }
 }
