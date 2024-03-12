@@ -1,9 +1,9 @@
 'use strict';
 
-const log = require('./log.js')
-const isDebug = require('./isDebug.js')
+import log from './log.js';
+import isDebug from './isDebug.js';
 
-module.exports = {
+export {
   isDebug,
   log,
 }

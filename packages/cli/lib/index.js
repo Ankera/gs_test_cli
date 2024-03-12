@@ -1,13 +1,17 @@
 "use strict";
 
-const commander = require("commander");
-const createInitCommand = require("@zimu_test/init");
-const semver = require("semver");
-// const chalk = require('chalk');
-const { log, isDebug } = require("@zimu_test/utils");
-const pkg = require("../package.json");
+import { program } from "commander";
+import createInitCommand from "@zimu_test/init";
+import path from 'node:path';
+import semver from "semver";
+import { dirname } from 'dirname-filename-esm'
+// const chalk from 'chalk');
+import { log, isDebug } from "@zimu_test/utils";
+import fse from 'fs-extra';
 
-const { program } = commander;
+const __dirname = dirname(import.meta);
+const pkgPath = path.resolve(__dirname, '../package.json')
+const pkg = fse.readJSONSync(pkgPath);
 
 const LOWEST_NODE_VERSION = "17.0.0";
 
@@ -29,7 +33,7 @@ process.on("uncaughtException", (e) => {
   }
 });
 
-module.exports = function (args) {
+export default function (args) {
   log.info("version", pkg.version);
   log.success("开始初始化", pkg.version);
   program

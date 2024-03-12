@@ -28,5 +28,6 @@
   },
   "dependencies": {
     "@zimu_test/command": "^1.0.1"
-  }
+  },
+  "type": "module"
 }

@@ -1,9 +1,12 @@
 #! /usr/bin/env node
 
-const importLocal = require('import-local');
-const npmlog = require('npmlog');
-const entry = require('../lib/index')
+import importLocal from 'import-local';
+import { fileURLToPath } from 'node:url';
+import entry from '../lib/index.js';
 
+//  dirname-filename-esm
+
+const __filename = fileURLToPath(import.meta.url);
 
 if(importLocal(__filename)){
   console.log('===sss')

@@ -25,5 +25,9 @@
   },
   "bugs": {
     "url": "https://github.com/Ankera/gs_test_cli/issues"
+  },
+  "type": "module",
+  "dependencies": {
+    "dirname-filename-esm": "^1.1.1"
   }
 }

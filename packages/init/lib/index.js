@@ -1,7 +1,7 @@
 'use strict';
 
-const Command = require('@zimu_test/command')
-const { log } = require('@zimu_test/utils');
+import Command from '@zimu_test/command';
+import { log } from '@zimu_test/utils';
 
 class InitCommand extends Command {
   get command() {
@@ -28,6 +28,6 @@ class InitCommand extends Command {
   }
 }
 
-module.exports = function Init(instance) {
+export default function Init(instance) {
   return new InitCommand(instance);
 }

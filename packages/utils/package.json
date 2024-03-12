@@ -29,5 +29,6 @@
   "dependencies": {
     "@zimu_test/utils": "^1.0.1",
     "npmlog": "^7.0.1"
-  }
+  },
+  "type": "module"
 }

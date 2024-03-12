@@ -1,5 +1,5 @@
-const log = require('npmlog')
-const isDebug = require('./isDebug.js')
+import log from 'npmlog';
+import isDebug from './isDebug.js';
 
 if(isDebug()){
   log.level = 'verbose';
@@ -14,4 +14,4 @@ log.addLevel('success', 2000, {
   bold: true,
 })
 
-module.exports = log;
+export default log;
