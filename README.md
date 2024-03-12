@@ -13,6 +13,20 @@ Node 必须18版本以上
 
 ### 新增包
 ```
+lerna create @zimu_test/command
+```
+
+### 安装依赖
+```
 npm install lodash --save  -w @zimu_test/pc_base
 ```
 
+
+### 发布上线
+```json
+// 必须包含bin
+"files": [
+  "lib",
+  "bin"
+],
+```

@@ -4,8 +4,9 @@
   "workspaces": [
     "packages/*"
   ],
-  "dependencies": {},
   "devDependencies": {
+    "@zimu_test/cli": "^1.0.1",
+    "@zimu_test/utils": "^1.0.0",
     "lerna": "^8.1.2"
   }
 }
